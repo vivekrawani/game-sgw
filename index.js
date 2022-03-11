@@ -1,3 +1,4 @@
+
 const choiceArr = document.querySelectorAll("img");
 
 const dUser = document.querySelector("#user-choice");
@@ -27,22 +28,21 @@ function displayResult(userChoice, computerChoice){
         document.querySelector("#result").textContent = "DRAW!";
     }
     else if ((userChoice == "snake" && computerChoice == "water")||(userChoice == "water" && computerChoice == "gun")||(userChoice == "gun" && computerChoice == "snake")) {
-        document.querySelector("#result").textContent = "You win!";
+        document.querySelector("#result").textContent =  user +" won!";
         userScore++;
         document.querySelector("#user-score").textContent = userScore;
-        
-    }   
+
+    }
     else {
-        document.querySelector("#result").textContent = "You lose!";
+        document.querySelector("#result").textContent = user + " lost!";
         computerScore++;
         document.querySelector("#computer-score").textContent = computerScore;
     }
 }
-
+var user = prompt("Enter player name")
+document.getElementById("user-name").innerText = user;
 
 
 //
 //
 //
-
-   
