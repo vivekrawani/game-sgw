@@ -5,19 +5,15 @@ const dComp = document.querySelector("#computer-choice");
 
 let userChoice;
 let computerChoice;
-choiceArr.forEach(element => { element.addEventListener("click", (e)=>{
+for(let i = 0; i < choiceArr.length; i++){
+    choiceArr[i].addEventListener("click", (e)=>{
     userChoice = e.target.alt;
     computerChoice = getComputerChoice();
-
     dUser.innerHTML = "You choose " + userChoice;
     dComp.innerHTML = "Computer choose " + computerChoice;
     displayResult(userChoice, computerChoice);
-
-
-})
-    
-});
-
+    });
+}
 function getComputerChoice(){
     let i = Math.floor(Math.random()*3);
     let arr = ["snake", "gun", "water"];

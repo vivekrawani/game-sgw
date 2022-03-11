@@ -1,15 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Poppins:wght@400;700&display=swap');
 body{
-    background-color: #b3cdd1;
-    background-image: linear-gradient(315deg, #b3cdd1 0%, #9fa4c4 74%);
-    
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
 }
+
 
 .stylish-big-font{
     font-size: 2.6rem;
+    font-family: 'Acme', sans-serif;
     
 }
 .stylish-small-font{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
 }
 img{
     height :8rem;  
@@ -29,6 +32,7 @@ img:active{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    margin-top: -20px;
 
 }
 .tiles{
@@ -36,12 +40,37 @@ img:active{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #7ee8fa;
-    background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
-    
-
-
-    
-    
+    background-color : #20bf55;
+    background-image : linear-gradient(315deg, #20bf55 0%, #01baef 74%);
     padding: 10px;
+    border:outset;
+    border-radius: 5%;
+}
+.output{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.display{
+    width: 290px;
+    border:outset;
+    margin: 25px 25px;
+    padding: 5px;
+    background-color: #20bf55;
+    background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+    border-radius: 5%;
+}
+.scoreboard{
+    width: 290px;
+    border:outset;
+    margin: 25px 25px ;
+    padding: 5px;
+    background-color : #20bf55;
+    background-image : linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+    border-radius: 5%;
+
+}
+h1{
+    color:#f0ffff
 }
